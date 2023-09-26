@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Cairo", sans-serif;
+    line-height: 1;
+}
+
+li.jsp_contact-row {
+    list-style: none;
+}
+
+body,
+html,
+.jsp_container {
+    background-color: black;
+    width: 100%;
+}
+
+.jsp_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.jsp_right-column {
+    background-color: white;
+    color: #101f32;
+    flex-grow: 4;
+}
+
+.jsp_left-column {
+    background-color: #101f32;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+.jsp_profile-head {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jsp_size-150 {
+    width: 150px;
+    height: 150px;
+}
+
+.jsp_profile-head .jsp_hex-shape {
+    width: 146px;
+    height: 146px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+.jsp_person-name {
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 10px 0 10px 0;
+    font-size: 35pt;
+}
+
+.jsp_person-name .jsp_last-name {
+    font-weight: 700;
+}
+
+.jsp_person-title {
+    text-transform: capitalize;
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+.jsp_svg-img-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.jsp_blue-bg {
+    background-color: #101f32;
+}
+
+.jsp_white-bg {
+    background-color: white;
+}
+
+.jsp_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jsp_section-header {
+    padding-left: 20px;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.jsp_svg-img {
+    width: 45%;
+}
+
+.jsp_white-svg {
+    filter: invert(100%);
+}
+
+.jsp_blue-svg {
+    filter: invert(9%) sepia(37%) saturate(1004%) hue-rotate(173deg) brightness(98%) contrast(95%);
+}
+
+.jsp_size-50 {
+    width: 50px;
+    height: 50px;
+}
+
+.jsp_hex-border {
+    display: inline-block;
+    box-sizing: border-box;
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    position: relative;
+}
+
+.jsp_section-header .jsp_hex-shape {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+.jsp_section-title {
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.jsp_decorative-line {
+    height: 2px;
+    flex-grow: 1;
+}
+
+.jsp_profile-section .jsp_section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jsp_profile-section .jsp_section-content p {
+    padding: 15px 50px 0 50px;
+    font-size: medium;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.jsp_profile-section .jsp_section-content span {
+    font-weight: 900;
+}
+
+.jsp_list {
+    padding-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jsp_row {
+    width: 100%;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.jsp_row .jsp_contact-icon {
+    padding: 20px;
+}
+
+.jsp_row p {
+    max-width: 250px;
+}
+
+.jsp_size-40 {
+    width: 40px;
+    height: 40px;
+}
+
+.jsp_skills-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.jsp_skills-list li {
+    padding: 0 40px 0 60px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.jsp_skills-list li p,
+.jsp_prof-section ul li p {
+    text-transform: uppercase;
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.jsp_knob {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.jsp_border-white {
+    border-color: white;
+}
+
+.jsp_border-blue {
+    border-color: #101f32;
+}
+
+.jsp_progress-bar {
+    position: relative;
+    border: 2px solid;
+    border-radius: 8px;
+    height: 14px;
+    width: 150px;
+}
+
+.jsp_progress-bar-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    height: 100%;
+}
+
+.jsp_progress-bar-fill.jsp_fill-80 {
+    width: 80%;
+}
+
+.jsp_progress-bar-fill.jsp_fill-70 {
+    width: 70%;
+}
+
+.jsp_progress-bar-fill.jsp_fill-60 {
+    width: 60%;
+}
+
+.jsp_row:last-child {
+    margin-bottom: 30px;
+}
+
+.jsp_work-section ul,
+.jsp_education-section ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-left: 70px;
+}
+
+.jsp_work-section li,
+.jsp_education-section li {
+    font-size: x-large;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.jsp_work-section li .jsp_job-desc,
+.jsp_education-section li .jsp_edu-desc {
+    font-size: large;
+    text-transform: none;
+    padding-top: 10px;
+    max-width: 90%;
+}
+
+.jsp_work-section .jsp_job,
+.jsp_education-section .jsp_degree {
+    font-weight: bolder;
+}
+
+.jsp_prof-section ul {
+    display: grid;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 50px;
+    row-gap: 10px;
+    column-gap: 5%;
+    grid-template-columns: repeat(2, 33% [col-start]);
+}
+
+.jsp_prof-section ul li {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
